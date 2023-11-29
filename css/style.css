@@ -1,0 +1,193 @@
+/* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;700&family=Open+Sans:wght@300&family=Poppins:wght@200;400;600&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    padding-bottom: 70px;   
+    
+    
+}
+
+/* Small */
+@media (min-width: 768px ) {
+    .container {
+        width: 100%;
+
+    
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+
+    }
+}
+/* Large */
+@media (min-width: 1440px) {
+    .container {
+    width: 100%;
+    }
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(../images/bg-pattern-top.svg) ,url(../images/bg-pattern-bottom.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: -160% 70% ,950px 600px  ;
+    position: relative;
+}
+@media (min-width:9px) and (max-width:1440PX){
+    body{
+        background-size: 80%;
+        background-position: -280px -480px ,600px 580px  ;
+    }
+}
+@media (min-width:768px) and (max-width:992PX){
+    body{
+        background-size: 80%;
+        background-position: -230px -310px ,380px 630px  ;
+    }
+}
+@media (min-width:375px) and (max-width:768px){
+    body{
+        background-size: 120%;
+        background-position: -230px -310px ,200px 630px  ;
+    }
+}
+/* End Global Rules */
+.content{
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,50%);
+    text-align: center;
+    background-color: white;
+    margin-top: -100px;
+}
+/* @media (min-width:375px) and (max-width:768px){
+    .content{
+        border-radius: 20px;
+        width: 400px;
+        transform: translate(-50% ,50%);
+    }
+
+} */
+
+.content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.content .container .top{
+    width: 400px;
+    height: 180px;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+/* @media (min-width:375px) and (max-width:768px){
+    .content .container .top{
+        width: 400px;}
+} */
+.content .container .top::after{
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    bottom: -50px;
+    left: 145px;
+    background-image: url(../images/image-victor.jpg);
+    background-repeat: no-repeat;
+    border:5px solid white ;
+    border-radius: 50%;
+}
+@media (max-width:768px)and (max-width:768px){
+    .content .container .top::after{
+        left: 150px;
+    }
+}
+.content .container .personal {
+    padding-top: 50px;
+    margin-bottom: -20px;
+    
+}
+
+span{
+    color:hsl(227, 10%, 46%);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+.content .container  .attribution {
+    position: absolute;
+    bottom: 10px;
+    right: 18%;
+}
+table{
+    margin-top: 60px;
+    border-top: 1px solid hsl(227, 10%, 46%);
+    width: 400px;
+    border-spacing: 0px;
+    /* text-align: center; */
+}
+/* @media (max-width:768px)and (max-width:768px){
+    table{width: 400px;}
+} */
+
+table .number td h2 {
+    margin: 5px;
+    padding-top: 30px;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+/* li , li h2 {
+    list-style-type: none;
+    display: inline ;
+    padding: 17px;
+}
+
+.social {
+    padding-top: 20px;
+    border-top: 1px solid hsl(227, 10%, 46%);
+    width: 450px;
+    margin-top: 60px;
+    text-align: center;
+}
+.number li {
+    padding-left: 10px;
+    padding-right: 30px;
+    
+}
+.world{
+    padding-top: 10px;
+}
+.world li {
+    padding-left: 15px;
+    padding-right: 60px;
+    
+}
+.number li:last-of-type{
+    padding-right: 45px;
+} */
+
+
+
